@@ -1,49 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+div {
+    margin: 3px;
+    padding: 6px;
 }
-
-body{
-    width: 100%;
-    height: 100vh;
+section{
+    margin: 3px;
+    padding: 6px;
+    border: 1px solid rgb(245, 199, 199);
+}
+.topo{
     display: flex;
+    height: 90vh;
+    width: 90%;
+    background: url("../img/fundo.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+
 }
 
-h2 {
-    font-weight: 500;
-    font-size: 1.8em;
-}
-
-p {
-    font-weight: 300;
-}
-.container{
+.depoimento{
     display: flex;
+    
+  
 }
 
 .conteudo{
-    background: url("assents/img/teclado.jpg");
+   
     background-position: center;
     background-size: cover;
     margin: 1em;
     padding: 2em;
     display: flex;
     flex-direction: row;
-    background-color: whitesmoke;
-    width: 60%;
-    height: 85vh;}
+    width: 70%;
+    height: 85%;
+}
 
 .formulario{
     margin: 1em;
     padding: 2em;
-    width: 30%;
-    height: 85vh;
+    width: 30%; /*largura */
+    height: 85%;/*altura*/
     justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
+    align-items: center; 
     flex-direction: row;
+   backdrop-filter: blur(4px); /* Para deixar o fundo transparente*/
+    border-radius: 3%; /* Para arredondar as bordas*/
+    border: 1px solid rgb(251, 245, 245);
+
 }
+
+.beneficios{
+    display: flex; /*para deixar itens lado a lado  */
+}
+
+.img-beneficios{
+    width: 100px;
+    height: 100px;
+}
+
+.img-depoimento{
+    width: 30%;
+    height: 80%;
+    border-radius: 50%; /*para deixar a img redonda*/
+}
+
